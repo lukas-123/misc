@@ -1,6 +1,5 @@
 import subprocess
 import shutil
-import os
 
 common='cnijfilter-common_2.90-1_i386.deb'
 driver='cnijfilter-ip2600series_2.90-1_i386.deb'
