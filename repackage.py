@@ -1,3 +1,9 @@
+# You may have to install some dependencies.
+# These require multiarch support on amd64 machines.
+# Some packages may even have to be installed from .deb files without a package manager.
+# If you get the warning cups-insecure-filter check the owner and group of
+# the canon files in /usr/lib/cups/filter and /usr/lib/cups/backend/ to root:root.
+
 import subprocess
 import shutil
 import os
@@ -20,3 +26,4 @@ def repackage(package):
 
 repackage(common)
 repackage(driver)
+
