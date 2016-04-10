@@ -20,13 +20,13 @@ while(not isValidFilepath(app_exec)):
 desktop_entry += "Exec=" + app_exec + "\n"
 
 app_icon = raw_input("Path to icon (empty for no icon):\n")
-while(not app_icon == '' and not isValidFilepath(app_icon)):
+while(not app_icon == "" and not isValidFilepath(app_icon)):
     app_icon = raw_input("File does not exist. Try again:\n")
-if(not (app_icon == '')):
-    desktop_entry += 'Icon=' + app_icon + "\n"
+if(not (app_icon == "")):
+    desktop_entry += "Icon=" + app_icon + "\n"
 
-filename = app_name.replace(' ','') + '.desktop'
-with open(filename, 'w') as desktop_file:
+filename = app_name.replace(" ", "") + ".desktop"
+with open(filename, "w") as desktop_file:
     desktop_file.write(desktop_entry)
     desktop_file.close()
 
