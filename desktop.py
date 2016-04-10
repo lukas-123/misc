@@ -1,6 +1,5 @@
 from os import stat
 import subprocess
-import pexpect
 
 def isValidFilepath(filepath):
     try:
