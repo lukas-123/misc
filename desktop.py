@@ -3,7 +3,7 @@ import subprocess
 
 def isValidFilepath(filepath):
     try:
-        stat(app_exec)
+        stat(filepath)
         return True
     except OSError:
         return False
